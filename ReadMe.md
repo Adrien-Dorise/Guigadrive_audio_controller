@@ -74,10 +74,10 @@ An ESP32 is used to convert the frequency to an input. The code is available her
 
 To amplify the signal, an A-class amplifier is built as shown on the pictures.
 
-* Solder the amplifer 
-* Design the case of the Arduino + amplifier 
-* Print the case
-* Play Metal Slug
+**How to use:**  
+When using the controller, the input signal must be calibrated. To do so, a 10s tempo is performed at startup, then the signal is sampled and the average is used as the calibration value.  
+From there, when a signal is detected, a DFT is performed. The user has to manually input the map frequency <-> output in the "press_key" function.  
+
 
 <p float="left">
 <img width="450" alt="Screenshot 2022-11-01 211410" src="https://github.com/Adrien-Dorise/Guigadrive_audio_controller/assets/71883623/3499c3ad-8fc8-4cbc-9a7a-8a198061ee9f">
